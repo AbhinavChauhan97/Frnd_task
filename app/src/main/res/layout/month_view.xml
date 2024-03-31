@@ -1,0 +1,29 @@
+<!-- month_view.xml -->
+<layout>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- Header for month and year -->
+    <TextView
+        android:id="@+id/monthYearTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <!-- Grid view for days -->
+    <GridLayout
+        android:id="@+id/calendarGridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="7"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/darker_gray">
+
+    </GridLayout>
+</LinearLayout>
+</layout>
